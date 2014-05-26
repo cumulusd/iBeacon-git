@@ -1,0 +1,576 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		55429F79184A76AD00BC8802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55429F78184A76AD00BC8802 /* Foundation.framework */; };
+		55429F7B184A76AD00BC8802 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55429F7A184A76AD00BC8802 /* CoreGraphics.framework */; };
+		55429F7D184A76AD00BC8802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55429F7C184A76AD00BC8802 /* UIKit.framework */; };
+		55429F83184A76AD00BC8802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55429F81184A76AD00BC8802 /* InfoPlist.strings */; };
+		55429F85184A76AD00BC8802 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429F84184A76AD00BC8802 /* main.m */; };
+		55429F89184A76AD00BC8802 /* BlueAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429F88184A76AD00BC8802 /* BlueAppDelegate.m */; };
+		55429F8C184A76AD00BC8802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55429F8A184A76AD00BC8802 /* Main.storyboard */; };
+		55429F8F184A76AD00BC8802 /* BlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429F8E184A76AD00BC8802 /* BlueViewController.m */; };
+		55429F91184A76AD00BC8802 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55429F90184A76AD00BC8802 /* Images.xcassets */; };
+		55429F98184A76AD00BC8802 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55429F97184A76AD00BC8802 /* XCTest.framework */; };
+		55429F99184A76AD00BC8802 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55429F78184A76AD00BC8802 /* Foundation.framework */; };
+		55429F9A184A76AD00BC8802 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55429F7C184A76AD00BC8802 /* UIKit.framework */; };
+		55429FA2184A76AD00BC8802 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 55429FA0184A76AD00BC8802 /* InfoPlist.strings */; };
+		55429FA4184A76AD00BC8802 /* BlueThingsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429FA3184A76AD00BC8802 /* BlueThingsTests.m */; };
+		55429FAE184A781800BC8802 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55429FAD184A781800BC8802 /* CoreBluetooth.framework */; };
+		55429FB0184A781E00BC8802 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55429FAF184A781E00BC8802 /* CoreLocation.framework */; };
+		55429FB41851834A00BC8802 /* BlueData.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429FB31851834A00BC8802 /* BlueData.m */; };
+		55429FB71852901A00BC8802 /* BeaconModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 55429FB51852901A00BC8802 /* BeaconModel.xcdatamodeld */; };
+		55429FD41853CC4400BC8802 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55429FD31853CC4400BC8802 /* CoreData.framework */; };
+		55429FD71853EECB00BC8802 /* BeaconGroup+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429FD61853EECB00BC8802 /* BeaconGroup+Create.m */; };
+		55429FDA1853EEE400BC8802 /* Location+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429FD91853EEE400BC8802 /* Location+Create.m */; };
+		55429FDD1853EEF300BC8802 /* AlertSchedule+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429FDC1853EEF300BC8802 /* AlertSchedule+Create.m */; };
+		55429FEC1853F92F00BC8802 /* CreateAlertScheduleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429FEB1853F92F00BC8802 /* CreateAlertScheduleTableViewController.m */; };
+		55429FEF1853FEB800BC8802 /* AlertSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429FEE1853FEB800BC8802 /* AlertSchedule.m */; };
+		55429FF21853FEB800BC8802 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429FF11853FEB800BC8802 /* Location.m */; };
+		55429FF51853FEB800BC8802 /* BeaconGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429FF41853FEB800BC8802 /* BeaconGroup.m */; };
+		55429FF81854542300BC8802 /* BlueImperator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55429FF71854542300BC8802 /* BlueImperator.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		55429F9B184A76AD00BC8802 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55429F6D184A76AD00BC8802 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55429F74184A76AD00BC8802;
+			remoteInfo = BlueThings;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		55429F75184A76AD00BC8802 /* BlueThings.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueThings.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		55429F78184A76AD00BC8802 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		55429F7A184A76AD00BC8802 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		55429F7C184A76AD00BC8802 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		55429F80184A76AD00BC8802 /* BlueThings-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueThings-Info.plist"; sourceTree = "<group>"; };
+		55429F82184A76AD00BC8802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55429F84184A76AD00BC8802 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		55429F86184A76AD00BC8802 /* BlueThings-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BlueThings-Prefix.pch"; sourceTree = "<group>"; };
+		55429F87184A76AD00BC8802 /* BlueAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueAppDelegate.h; sourceTree = "<group>"; };
+		55429F88184A76AD00BC8802 /* BlueAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueAppDelegate.m; sourceTree = "<group>"; };
+		55429F8B184A76AD00BC8802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		55429F8D184A76AD00BC8802 /* BlueViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BlueViewController.h; sourceTree = "<group>"; };
+		55429F8E184A76AD00BC8802 /* BlueViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueViewController.m; sourceTree = "<group>"; };
+		55429F90184A76AD00BC8802 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		55429F96184A76AD00BC8802 /* BlueThingsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueThingsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		55429F97184A76AD00BC8802 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		55429F9F184A76AD00BC8802 /* BlueThingsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BlueThingsTests-Info.plist"; sourceTree = "<group>"; };
+		55429FA1184A76AD00BC8802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		55429FA3184A76AD00BC8802 /* BlueThingsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlueThingsTests.m; sourceTree = "<group>"; };
+		55429FAD184A781800BC8802 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		55429FAF184A781E00BC8802 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		55429FB21851834A00BC8802 /* BlueData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueData.h; sourceTree = "<group>"; };
+		55429FB31851834A00BC8802 /* BlueData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueData.m; sourceTree = "<group>"; };
+		55429FB61852901A00BC8802 /* BeaconModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeaconModel.xcdatamodel; sourceTree = "<group>"; };
+		55429FD31853CC4400BC8802 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		55429FD51853EECB00BC8802 /* BeaconGroup+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "BeaconGroup+Create.h"; sourceTree = "<group>"; };
+		55429FD61853EECB00BC8802 /* BeaconGroup+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "BeaconGroup+Create.m"; sourceTree = "<group>"; };
+		55429FD81853EEE400BC8802 /* Location+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Location+Create.h"; sourceTree = "<group>"; };
+		55429FD91853EEE400BC8802 /* Location+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Location+Create.m"; sourceTree = "<group>"; };
+		55429FDB1853EEF300BC8802 /* AlertSchedule+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AlertSchedule+Create.h"; sourceTree = "<group>"; };
+		55429FDC1853EEF300BC8802 /* AlertSchedule+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AlertSchedule+Create.m"; sourceTree = "<group>"; };
+		55429FEA1853F92F00BC8802 /* CreateAlertScheduleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateAlertScheduleTableViewController.h; sourceTree = "<group>"; };
+		55429FEB1853F92F00BC8802 /* CreateAlertScheduleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateAlertScheduleTableViewController.m; sourceTree = "<group>"; };
+		55429FED1853FEB800BC8802 /* AlertSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertSchedule.h; sourceTree = "<group>"; };
+		55429FEE1853FEB800BC8802 /* AlertSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertSchedule.m; sourceTree = "<group>"; };
+		55429FF01853FEB800BC8802 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		55429FF11853FEB800BC8802 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		55429FF31853FEB800BC8802 /* BeaconGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeaconGroup.h; sourceTree = "<group>"; };
+		55429FF41853FEB800BC8802 /* BeaconGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BeaconGroup.m; sourceTree = "<group>"; };
+		55429FF61854542300BC8802 /* BlueImperator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlueImperator.h; sourceTree = "<group>"; };
+		55429FF71854542300BC8802 /* BlueImperator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlueImperator.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		55429F72184A76AD00BC8802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55429FD41853CC4400BC8802 /* CoreData.framework in Frameworks */,
+				55429FB0184A781E00BC8802 /* CoreLocation.framework in Frameworks */,
+				55429FAE184A781800BC8802 /* CoreBluetooth.framework in Frameworks */,
+				55429F7B184A76AD00BC8802 /* CoreGraphics.framework in Frameworks */,
+				55429F7D184A76AD00BC8802 /* UIKit.framework in Frameworks */,
+				55429F79184A76AD00BC8802 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55429F93184A76AD00BC8802 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55429F98184A76AD00BC8802 /* XCTest.framework in Frameworks */,
+				55429F9A184A76AD00BC8802 /* UIKit.framework in Frameworks */,
+				55429F99184A76AD00BC8802 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		55429F6C184A76AD00BC8802 = {
+			isa = PBXGroup;
+			children = (
+				55429F7E184A76AD00BC8802 /* BlueThings */,
+				55429F9D184A76AD00BC8802 /* BlueThingsTests */,
+				55429F77184A76AD00BC8802 /* Frameworks */,
+				55429F76184A76AD00BC8802 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		55429F76184A76AD00BC8802 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55429F75184A76AD00BC8802 /* BlueThings.app */,
+				55429F96184A76AD00BC8802 /* BlueThingsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		55429F77184A76AD00BC8802 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				55429FD31853CC4400BC8802 /* CoreData.framework */,
+				55429FAF184A781E00BC8802 /* CoreLocation.framework */,
+				55429FAD184A781800BC8802 /* CoreBluetooth.framework */,
+				55429F78184A76AD00BC8802 /* Foundation.framework */,
+				55429F7A184A76AD00BC8802 /* CoreGraphics.framework */,
+				55429F7C184A76AD00BC8802 /* UIKit.framework */,
+				55429F97184A76AD00BC8802 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55429F7E184A76AD00BC8802 /* BlueThings */ = {
+			isa = PBXGroup;
+			children = (
+				55429FB11851833400BC8802 /* Data */,
+				55429F87184A76AD00BC8802 /* BlueAppDelegate.h */,
+				55429F88184A76AD00BC8802 /* BlueAppDelegate.m */,
+				55429FEA1853F92F00BC8802 /* CreateAlertScheduleTableViewController.h */,
+				55429FEB1853F92F00BC8802 /* CreateAlertScheduleTableViewController.m */,
+				55429F8A184A76AD00BC8802 /* Main.storyboard */,
+				55429F8D184A76AD00BC8802 /* BlueViewController.h */,
+				55429F8E184A76AD00BC8802 /* BlueViewController.m */,
+				55429F90184A76AD00BC8802 /* Images.xcassets */,
+				55429F7F184A76AD00BC8802 /* Supporting Files */,
+				55429FF61854542300BC8802 /* BlueImperator.h */,
+				55429FF71854542300BC8802 /* BlueImperator.m */,
+			);
+			path = BlueThings;
+			sourceTree = "<group>";
+		};
+		55429F7F184A76AD00BC8802 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55429F80184A76AD00BC8802 /* BlueThings-Info.plist */,
+				55429F81184A76AD00BC8802 /* InfoPlist.strings */,
+				55429F84184A76AD00BC8802 /* main.m */,
+				55429F86184A76AD00BC8802 /* BlueThings-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55429F9D184A76AD00BC8802 /* BlueThingsTests */ = {
+			isa = PBXGroup;
+			children = (
+				55429FA3184A76AD00BC8802 /* BlueThingsTests.m */,
+				55429F9E184A76AD00BC8802 /* Supporting Files */,
+			);
+			path = BlueThingsTests;
+			sourceTree = "<group>";
+		};
+		55429F9E184A76AD00BC8802 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				55429F9F184A76AD00BC8802 /* BlueThingsTests-Info.plist */,
+				55429FA0184A76AD00BC8802 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		55429FB11851833400BC8802 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				55429FB51852901A00BC8802 /* BeaconModel.xcdatamodeld */,
+				55429FF31853FEB800BC8802 /* BeaconGroup.h */,
+				55429FF41853FEB800BC8802 /* BeaconGroup.m */,
+				55429FF01853FEB800BC8802 /* Location.h */,
+				55429FF11853FEB800BC8802 /* Location.m */,
+				55429FED1853FEB800BC8802 /* AlertSchedule.h */,
+				55429FEE1853FEB800BC8802 /* AlertSchedule.m */,
+				55429FB21851834A00BC8802 /* BlueData.h */,
+				55429FB31851834A00BC8802 /* BlueData.m */,
+				55429FD51853EECB00BC8802 /* BeaconGroup+Create.h */,
+				55429FD61853EECB00BC8802 /* BeaconGroup+Create.m */,
+				55429FD81853EEE400BC8802 /* Location+Create.h */,
+				55429FD91853EEE400BC8802 /* Location+Create.m */,
+				55429FDB1853EEF300BC8802 /* AlertSchedule+Create.h */,
+				55429FDC1853EEF300BC8802 /* AlertSchedule+Create.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		55429F74184A76AD00BC8802 /* BlueThings */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55429FA7184A76AD00BC8802 /* Build configuration list for PBXNativeTarget "BlueThings" */;
+			buildPhases = (
+				55429F71184A76AD00BC8802 /* Sources */,
+				55429F72184A76AD00BC8802 /* Frameworks */,
+				55429F73184A76AD00BC8802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueThings;
+			productName = BlueThings;
+			productReference = 55429F75184A76AD00BC8802 /* BlueThings.app */;
+			productType = "com.apple.product-type.application";
+		};
+		55429F95184A76AD00BC8802 /* BlueThingsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 55429FAA184A76AD00BC8802 /* Build configuration list for PBXNativeTarget "BlueThingsTests" */;
+			buildPhases = (
+				55429F92184A76AD00BC8802 /* Sources */,
+				55429F93184A76AD00BC8802 /* Frameworks */,
+				55429F94184A76AD00BC8802 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				55429F9C184A76AD00BC8802 /* PBXTargetDependency */,
+			);
+			name = BlueThingsTests;
+			productName = BlueThingsTests;
+			productReference = 55429F96184A76AD00BC8802 /* BlueThingsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		55429F6D184A76AD00BC8802 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Blue;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Daniel Bradford";
+				TargetAttributes = {
+					55429F74184A76AD00BC8802 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					55429F95184A76AD00BC8802 = {
+						TestTargetID = 55429F74184A76AD00BC8802;
+					};
+				};
+			};
+			buildConfigurationList = 55429F70184A76AD00BC8802 /* Build configuration list for PBXProject "BlueThings" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 55429F6C184A76AD00BC8802;
+			productRefGroup = 55429F76184A76AD00BC8802 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				55429F74184A76AD00BC8802 /* BlueThings */,
+				55429F95184A76AD00BC8802 /* BlueThingsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		55429F73184A76AD00BC8802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55429F91184A76AD00BC8802 /* Images.xcassets in Resources */,
+				55429F83184A76AD00BC8802 /* InfoPlist.strings in Resources */,
+				55429F8C184A76AD00BC8802 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55429F94184A76AD00BC8802 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55429FA2184A76AD00BC8802 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		55429F71184A76AD00BC8802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55429FD71853EECB00BC8802 /* BeaconGroup+Create.m in Sources */,
+				55429FF81854542300BC8802 /* BlueImperator.m in Sources */,
+				55429F89184A76AD00BC8802 /* BlueAppDelegate.m in Sources */,
+				55429F85184A76AD00BC8802 /* main.m in Sources */,
+				55429FEC1853F92F00BC8802 /* CreateAlertScheduleTableViewController.m in Sources */,
+				55429FF21853FEB800BC8802 /* Location.m in Sources */,
+				55429FF51853FEB800BC8802 /* BeaconGroup.m in Sources */,
+				55429F8F184A76AD00BC8802 /* BlueViewController.m in Sources */,
+				55429FEF1853FEB800BC8802 /* AlertSchedule.m in Sources */,
+				55429FDA1853EEE400BC8802 /* Location+Create.m in Sources */,
+				55429FDD1853EEF300BC8802 /* AlertSchedule+Create.m in Sources */,
+				55429FB71852901A00BC8802 /* BeaconModel.xcdatamodeld in Sources */,
+				55429FB41851834A00BC8802 /* BlueData.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55429F92184A76AD00BC8802 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				55429FA4184A76AD00BC8802 /* BlueThingsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55429F9C184A76AD00BC8802 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 55429F74184A76AD00BC8802 /* BlueThings */;
+			targetProxy = 55429F9B184A76AD00BC8802 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		55429F81184A76AD00BC8802 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55429F82184A76AD00BC8802 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		55429F8A184A76AD00BC8802 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55429F8B184A76AD00BC8802 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		55429FA0184A76AD00BC8802 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				55429FA1184A76AD00BC8802 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		55429FA5184A76AD00BC8802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		55429FA6184A76AD00BC8802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		55429FA8184A76AD00BC8802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueThings/BlueThings-Prefix.pch";
+				INFOPLIST_FILE = "BlueThings/BlueThings-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		55429FA9184A76AD00BC8802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueThings/BlueThings-Prefix.pch";
+				INFOPLIST_FILE = "BlueThings/BlueThings-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		55429FAB184A76AD00BC8802 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueThings.app/BlueThings";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueThings/BlueThings-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "BlueThingsTests/BlueThingsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		55429FAC184A76AD00BC8802 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/BlueThings.app/BlueThings";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BlueThings/BlueThings-Prefix.pch";
+				INFOPLIST_FILE = "BlueThingsTests/BlueThingsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		55429F70184A76AD00BC8802 /* Build configuration list for PBXProject "BlueThings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55429FA5184A76AD00BC8802 /* Debug */,
+				55429FA6184A76AD00BC8802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55429FA7184A76AD00BC8802 /* Build configuration list for PBXNativeTarget "BlueThings" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55429FA8184A76AD00BC8802 /* Debug */,
+				55429FA9184A76AD00BC8802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		55429FAA184A76AD00BC8802 /* Build configuration list for PBXNativeTarget "BlueThingsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55429FAB184A76AD00BC8802 /* Debug */,
+				55429FAC184A76AD00BC8802 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		55429FB51852901A00BC8802 /* BeaconModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				55429FB61852901A00BC8802 /* BeaconModel.xcdatamodel */,
+			);
+			currentVersion = 55429FB61852901A00BC8802 /* BeaconModel.xcdatamodel */;
+			path = BeaconModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 55429F6D184A76AD00BC8802 /* Project object */;
+}

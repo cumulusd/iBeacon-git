@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="1.0" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="3401" systemVersion="13A603" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="iOS 7.0">
+    <entity name="AlertSchedule" representedClassName="AlertSchedule" syncable="YES">
+        <attribute name="alertFrequencyID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="friday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="locationEventTypeID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="message" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="monday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="saturday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="startTime" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="sunday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="thursday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="tuesday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="wednesday" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <relationship name="alertLocation" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Location" inverseName="locationAlerts" inverseEntity="Location" syncable="YES"/>
+    </entity>
+    <entity name="BeaconGroup" representedClassName="BeaconGroup" syncable="YES">
+        <attribute name="beaconUUID" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="locations" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Location" inverseName="beaconGroup" inverseEntity="Location" syncable="YES"/>
+    </entity>
+    <entity name="Location" representedClassName="Location" syncable="YES">
+        <attribute name="majorID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="minorID" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="beaconGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="BeaconGroup" inverseName="locations" inverseEntity="BeaconGroup" syncable="YES"/>
+        <relationship name="locationAlerts" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="AlertSchedule" inverseName="alertLocation" inverseEntity="AlertSchedule" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="AlertSchedule" positionX="-32861" positionY="-12313" width="128" height="238"/>
+        <element name="BeaconGroup" positionX="-33336" positionY="-12346" width="126" height="88"/>
+        <element name="Location" positionX="-33111" positionY="-12364" width="126" height="118"/>
+    </elements>
+</model>
